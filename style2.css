@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-page{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+   
+    height: 76vh;
+    width: 35vw;
+    
+    font-size: 3vh;
+   
+    background-color: grey;
+   
+    
+    
+}
+.reg-page h1{
+    color: orange;
+    flex-direction: row;
+    
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .reg-page{
+        background-color: aqua;
+        font-size: 3vh;
+        width: 30vh;
+        height: 95vh;
+        left:50%;
+        top : 50%;
+    }
+
+    
+    
+        
+        
+
+ 
+    
+    
+/* @media (min-width:200px){ */
+  
+    
+  /* h1{ */
+        /* text-align: center; */
+    /* } */
+

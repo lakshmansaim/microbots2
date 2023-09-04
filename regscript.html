@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Registration Page</title>
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <script>
+            function myvalidate(form){
+                var firstname = form.firstname.value;
+                var lastname = form.lastname.value;
+                var createpassword = form.createpassword.value;
+                if(firstname.length===0){
+                    alert("you must enter the valid firstname");
+                    return false;
+                }
+                if(lastname.length===0){
+                    alert("you must enter the vaild lastname");
+                    return false;
+                }
+                if(createpassword.length===0){
+                    alert("you must enter the vaild password");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+        <body>
+            <div class="reg-page">
+                <h1 style="font-size: 3vw;">Registration</h1><br>
+                <form action="succes.html" onsubmit="return myvalidate(this);">
+                    <p>First Name</p>
+                    <input type="text" name="firstname" placeholder="Enter First Name"><br><br>
+                    <p>Last Name</p>
+                    <input type="text" name="lastname" placeholder="Enter Last Name"><br><br>
+                    <p>Email</p>
+                    <input type="text" name="email" list="mails" placeholder="Enter Email "><br><br>
+                    <datalist id="mails">
+                        
+                        <option value="ethryet@gmail.com"></option>
+                        <option value="rthyrth@gmail.com"></option>
+                        <option value="rterftrhyety@gmail.com"></option>
+                        <option value="re5ty6rtehyeth@gmail.com"></option>
+                     </datalist>
+                    <p>Create Password</p>
+                    <input type="password" name="createpassword" placeholder="Create Password"><br><br>
+                    <p>Confirm Password</p>
+                    <input type="confirmpassword" name="confirmpassword" placeholder="Confirm Password"><br><br>
+                    <p>Gender</p>
+                    <input type="radio" name="gender" >
+                    <span>Male</span>
+                    <input type="radio" name="gender">
+                    <span>Female</span>
+                    <br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </body>
+    </head>
+</html>
